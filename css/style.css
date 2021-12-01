@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "audi-extendedbold";
+    src: url("auditype-extendedbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "audi-normal";
+    src: url("AudiTypeScreenNormal.woff") format("woff");
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -moz-tap-highlight-color: rgba(255, 255, 255, 0);
+    -ms-tap-highlight-color: rgba(255, 255, 255, 0);
+    tap-highlight-color: rgba(255, 255, 255, 0);    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+#replaycontainer {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 110px;
+}
+
+html,
+body {
+    position: absolute;
+    line-height: 1em;
+    height: 600px;
+    width: 160px;
+    margin: 0;
+}
+div {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block; 
+    position: absolute;
+
+}
+img, div.img{ 
+    display: block; 
+    position: absolute;
+}
+
+
+#container {
+    opacity: 0;
+    background-color: #ffffff;
+    border: 0px solid #000000;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    height: 600px;
+    width: 160px;
+    left: 0px;
+    top: 0px;
+}
+
+#container:after {
+    box-sizing: border-box;
+    border-color: inherit;
+    pointer-events: none;
+    border-style: solid;
+    position: absolute;
+    border-width: 1px;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    cursor: pointer;
+    top: 0px;
+    content: "";
+}
+
+#main {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    height: 600px;
+    width: 160px;
+    left: 0px;
+    top: 0px;
+}
+#logos {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    height: 600px;
+    width: 160px;
+    left: 0px;
+    top: 0px;    
+}
+.headlines {
+    font-family: "audi-extendedbold", sans-serif;
+    position: absolute;
+    line-height: 1.20em;
+    letter-spacing: -0.003em;
+}
+
+.headlines-centered {
+    text-align: center;
+}
+
+.disclaimers {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    line-height: 1em;
+    letter-spacing: 0.003em;
+}
+
+.cta {
+    position: absolute;
+}
+.car_img{
+}
+
+#car_3q .rear_wheel{
+}
+
+#car_3q .front_wheel{
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+    .car_img{
+        image-rendering: -webkit-optimize-contrast
+    }
+    #car_3q .rear_wheel{
+         image-rendering: -webkit-optimize-contrast
+    }
+    #car_3q .front_wheel{
+         image-rendering: -webkit-optimize-contrast
+    }
+ }
+
+#cars {
+    pointer-events: none;
+    position:           absolute;
+    display:            block;
+    left:               0px;
+    top:                0px;
+    width:              160px;
+    height:             600px;
+    overflow:           hidden;
+    opacity:            0;
+}
+
+
+#restart_button{
+    visibility: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    font-family: arial;
+    cursor: pointer;
+
+}
